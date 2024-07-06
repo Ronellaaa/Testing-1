@@ -1,0 +1,174 @@
+/* EmotionPlayground.css */
+.playground-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.game2-h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #7469b6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.scenario-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.character-image {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.emotions-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.emotion-button {
+  background-color: #ff8787;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px #f94c66;
+  border-radius: 10px;
+  width: 100px;
+  height: 70px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+.emotion-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: 0 5px darkgrey;
+  color: black;
+}
+
+.feedback {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.completed-game {
+  text-align: center;
+  color: #f94c66;
+}
+.close-btn1 {
+  background-color: #f94c66;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  margin: 10px 0px 0px 10px;
+}
+
+.close-btn1:hover {
+  background-color: #ff8787;
+}
+/* Media Queries */
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .game2-h1 {
+    font-size: 1.5rem;
+  }
+  .scenario-container {
+    font-size: 1rem;
+  }
+
+  .character-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .emotion-button {
+    width: 80px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+
+  .feedback {
+    font-size: 20px;
+  }
+
+  .close-btn1 {
+    width: 55px;
+    height: 55px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .game2-h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .character-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .emotions-container {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .emotion-button {
+    width: 70px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .feedback {
+    font-size: 18px;
+  }
+
+  .close-btn1 {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+  .scenario-container {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,257 @@
+/* Main container for the game */
+.game-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Content container */
+.content {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+/* Heading styles */
+.heading {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Emotion image */
+.emotion-image {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Options container */
+.options-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Option button */
+.option-button {
+  background-color: #ffacac;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0 5px #5d0e41; /* Darker shade for shadow */
+}
+
+.option-button:hover {
+  transform: scale(1.1);
+}
+
+/* Option image */
+.option-image {
+  width: 50px;
+  height: 50px;
+}
+
+/* Feedback text */
+.feedback {
+  font-size: 1.5em;
+  color: #071952;
+  font-weight: bolder;
+  text-shadow: 1px 1px 3px rgba(235, 244, 246, 0.7);
+}
+
+/* Celebration video */
+.celebration-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 3; /* Higher than other elements */
+}
+
+/* Video overlay */
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+/* Retry button */
+.retry-button {
+  background-color: #ff204e;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: 0 5px #5d0e41;
+  margin-right: 20px;
+}
+
+.retry-button:hover {
+  transform: scale(1.1);
+}
+
+/* Heading color */
+.heading1 {
+  color: #ed2b2a;
+}
+
+/* Completed game styles */
+.completed-game {
+  color: #151515;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Disabled option button */
+.option-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Trophy image */
+.trophy-image {
+  width: 200px;
+  margin: 20px 0;
+}
+
+/* View rewards button */
+.view-rewards-button {
+  background-color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: 0 5px #388e3c;
+}
+
+.view-rewards-button:hover {
+  transform: scale(1.1);
+}
+
+/* Close video button */
+.close-video-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff204e;
+  border: none;
+  padding: 10px;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* Media Queries */
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.5em;
+  }
+
+  .emotion-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .feedback {
+    font-size: 1.2em;
+  }
+
+  .retry-button,
+  .view-rewards-button {
+    font-size: 2em;
+    padding: 8px 16px;
+  }
+
+  .option-button {
+    padding: 8px 16px;
+  }
+
+  .completed-game {
+    margin: 5px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5em;
+  }
+
+  .emotion-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .options-container {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .feedback {
+    font-size: 1em;
+  }
+
+  .retry-button,
+  .view-rewards-button {
+    font-size: 1em;
+    padding: 6px 12px;
+  }
+
+  .option-button {
+    padding: 6px 12px;
+  }
+
+  .option-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .completed-game {
+    margin: 5px;
+  }
+}

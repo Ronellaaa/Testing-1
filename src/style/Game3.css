@@ -1,0 +1,143 @@
+/* Game3.css */
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure the background image is behind all other content */
+  opacity: 0.8;
+}
+
+.game3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  font-family: "Arial", sans-serif;
+}
+
+.game3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: #ffcdea;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.card-grid-container {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.card {
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Maintain a square aspect ratio */
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.6s;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #86469c, #bc7fcd, #fb9ad1, #ffcdea);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+/* Media Queries */
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .game3 {
+    font-size: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+    max-width: 400px;
+  }
+
+  .card-front img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .card-back {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .game3 {
+    font-size: 1.5rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 5px;
+    max-width: 300px;
+  }
+
+  .card-front img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+
+  .card-back {
+    font-size: 1rem;
+  }
+}

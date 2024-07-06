@@ -1,0 +1,91 @@
+/* Levels.css */
+
+.levels-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f1fada;
+}
+
+.levels-heading {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.levels-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.level-button {
+  padding: 10px 20px;
+  font-size: 1.5em;
+  background-color: #a67b5b;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px #543310;
+}
+
+.level-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.level-button:hover:enabled {
+  background-color: #ecb176;
+  transform: scale(1.1);
+}
+.sidePic {
+  width: 300px;
+  height: auto;
+}
+/* Media Queries */
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .levels-heading {
+    font-size: 2.5em;
+  }
+
+  .levels-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .level-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+  }
+
+  .sidePic {
+    width: 250px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .levels-heading {
+    font-size: 2em;
+  }
+
+  .levels-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .level-button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .sidePic {
+    width: 200px;
+  }
+}
