@@ -1,0 +1,199 @@
+/* Main container for the rewards system */
+.reward-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Adding a semi-transparent background for better visibility */
+}
+/* Heading style */
+.reward-container h1 {
+  color: #fff; /* Changed to white for better contrast */
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Adjusted for better readability */
+  z-index: 1;
+  background-color: #910a67;
+  box-shadow: 0 5px #720455;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Background image */
+.reward-container img.reward-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff8f00;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.close-btn:hover {
+  background-color: #ffdb00;
+}
+
+/* Container for rewards with visible and hidden states */
+.rewards-tracker {
+  width: 50%;
+  height: 20%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent white background */
+  border: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  z-index: 1;
+  margin-top: 10px;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for visibility change */
+}
+
+.rewards-tracker.hidden {
+  opacity: 0; /* Hidden state */
+  pointer-events: none; /* Prevent interactions when hidden */
+}
+
+.rewards-tracker.visible {
+  opacity: 1; /* Visible state */
+}
+
+/* Each reward item (trophy) */
+.reward-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reward-item img.trophy-image {
+  width: 100px; /* Adjust the width to a suitable size */
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Container for the list of small trophies */
+.trophies-list {
+  width: 50%;
+  height: auto;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent white background */
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+/* Small trophy images in the list */
+.small-trophy-image {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+}
+/* Media Queries */
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .rewards-tracker,
+  .trophies-list {
+    width: 70%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .reward-container h1 {
+    font-size: 2rem;
+    padding: 8px;
+  }
+
+  .reward-item img.trophy-image {
+    width: 80px;
+  }
+
+  .small-trophy-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .close-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .rewards-tracker,
+  .trophies-list {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .reward-container h1 {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  .reward-item img.trophy-image {
+    width: 60px;
+  }
+
+  .small-trophy-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .close-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}
