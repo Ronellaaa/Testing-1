@@ -1,0 +1,181 @@
+{
+  "emotions": [
+    {
+      "emotion": "happiness",
+      "moments": [
+        {
+          "id": 1,
+          "image": "/learn/gift.webp",
+          "description": "Receiving a gift"
+        },
+        {
+          "id": 2,
+          "image": "/learn/winner.webp",
+          "description": "Winning a trophy"
+        },
+        {
+          "id": 3,
+          "image": "/learn/praise.webp",
+          "description": "Being praised"
+        },
+        {
+          "id": 4,
+          "image": "/learn/eat.webp",
+          "description": "Eating favorite food"
+        },
+        {
+          "id": 5,
+          "image": "/learn/family.webp",
+          "description": "Family reunion"
+        },
+        {
+          "id": 6,
+          "image": "/learn/picnic.webp",
+          "description": "Going on a trip"
+        },
+        {
+          "id": 7,
+          "image": "/learn/swim.webp",
+          "description": "Swimming"
+        },
+        {
+          "id": 8,
+          "image": "/learn/teddy.webp",
+          "description": "Hugging a favorite toy"
+        },
+        {
+          "id": 9,
+          "image": "/learn/gift.webp",
+          "description": "Meeting grandparents"
+        },
+        {
+          "id": 10,
+          "image": "/learn/gift.webp",
+          "description": "Meeting grandparents"
+        }
+      ],
+      "video": {
+        "heading": "Let's Do a Happy Dance!",
+        "videoUrl": "https://www.youtube.com/embed/a1NIWCr0R-k?si=HdwcLrs14o6N6NPL"
+      }
+    },
+    {
+      "emotion": "sadness",
+      "moments": [
+        {
+          "id": 1,
+          "image": "/learn/aalonemiss.webp",
+          "description": "Rainy day"
+        },
+        {
+          "id": 2,
+          "image": "/learn/broken.webp",
+          "description": "Broken Toy"
+        },
+        {
+          "id": 3,
+          "image": "/learn/alone.webp",
+          "description": "Sitting Alone on a Bench"
+        },
+        {
+          "id": 4,
+          "image": "/learn/missing.webp",
+          "description": "Sitting in a Corner"
+        },
+        {
+          "id": 5,
+          "image": "/learn/broken.webp",
+          "description": "Broken favorite toy"
+        },
+        {
+          "id": 6,
+          "image": "/learn/miss.webp",
+          "description": "Watching a Friend Leaving"
+        },
+        {
+          "id": 7,
+          "image": "/learn/studies.webp",
+          "description": "Bad Grade on Test"
+        },
+        {
+          "id": 8,
+          "image": "/learn/fear.webp",
+          "description": "Pet Running Away"
+        },
+        {
+          "id": 9,
+          "image": "/learn/ice.webp",
+          "description": "Dropped Ice Cream"
+        },
+        {
+          "id": 10,
+          "image": "/learn/fall.webp",
+          "description": "Hurting Knee"
+        }
+      ],
+      "video": {
+        "heading": "Coping with Sadness",
+        "videoUrl": "https://www.youtube.com/embed/j1bIdWfeutI?si=1lm_aM9ljEtYCL4Q"
+      }
+    },
+    {
+      "emotion": "anger",
+      "moments": [
+        {
+          "id": 1,
+          "image": "/learn/anger1.webp",
+          "description": "Clenched Fists and Angry Expression: A child with clenched fists and an angry expression after another child takes their toy."
+        },
+        {
+          "id": 2,
+          "image": "/learn/anger2.webp",
+          "description": "Stomping Feet and Yelling: A child stomping their feet and yelling after being told they can't have a treat."
+        },
+        {
+          "id": 3,
+          "image": "/learn/anger3.webp",
+          "description": "Angry Face and Crossed Arms: A child with an angry face and crossed arms after losing a game."
+        },
+        {
+          "id": 4,
+          "image": "/learn/anger4.webp",
+          "description": "Angry Expression After Drawing Gets Torn: A child with an angry expression after their drawing gets torn."
+        },
+        {
+          "id": 5,
+          "image": "/learn/anger5.webp",
+          "description": "Throwing a Toy in Frustration: A child throwing a toy in frustration after it breaks."
+        },
+        {
+          "id": 6,
+          "image": "/learn/anger6.webp",
+          "description": "Yelling at a Friend: A child yelling at a friend who accidentally bumps into them."
+        },
+        {
+          "id": 7,
+          "image": "/learn/anger7.webp",
+          "description": "Block Tower Knocked Over: A child with an angry face and tears after their block tower gets knocked over."
+        },
+        {
+          "id": 8,
+          "image": "/learn/anger8.webp",
+          "description": "Pushing Away Plate: A child angrily pushing away their plate of food during a meal."
+        },
+        {
+          "id": 9,
+          "image": "/learn/anger9.webp",
+          "description": "Stomping Foot: A child angrily stomping their foot because they are not allowed to play outside."
+        },
+        {
+          "id": 10,
+          "image": "/learn/anger10.webp",
+          "description": "Crossed Arms and Angry Face: A child with an angry face and crossed arms because they don't want to share their toy."
+        }
+      ],
+      "video": {
+        "heading": "Coping with Sadness",
+        "videoUrl": "https://www.youtube.com/embed/sampleSadVideo"
+      }
+    }
+  ]
+}

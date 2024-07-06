@@ -1,42 +1,181 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* General button styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px; /* Round borders */
+  margin: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Primary button styling */
+button.primary {
+  background-color: #f85ca7; /* Pink */
+  color: white;
+}
+
+button.primary:hover {
+  background-color: #eb5f95; /* Darker pink */
+  transform: scale(1.05);
+}
+
+/* Secondary button styling */
+button.secondary {
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px; /* Round borders */
+}
+
+button.secondary:hover {
+  background-color: #ff7a45; /* Lighter gradient */
+  transform: scale(1.05);
+}
+
+/* Danger button styling */
+button.danger {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+button.danger:hover {
+  background-color: #e31e10; /* Darker red */
+  transform: scale(1.05);
+}
+
+/* Try Again button styling */
+button.try-again {
+  background-color: #ffa500; /* Orange */
+  color: white;
+}
+
+button.try-again:hover {
+  background-color: #e69500; /* Darker orange */
+  transform: scale(1.05);
+}
+
+/* Centered content */
+.centered-content {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Specific button styling for the app */
+button.primary {
+  background-color: #f65a9e; /* Pink */
+  color: white;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.primary:hover {
+  background-color: #fcc3fc; /* Lighter pink */
+  transform: scale(1.05);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Back button styling */
+.back-button {
+  background-color: #e84677; /* Red */
+  color: white;
+  padding: 15px 30px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 100px; /* Round borders */
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+  width: 100px;
+  height: 100px;
+  float: left;
 }
 
-.card {
-  padding: 2em;
+.back-button:hover {
+  background-color: #d03a68; /* Darker red */
+  transform: scale(1.05);
 }
 
-.read-the-docs {
-  color: #888;
+/* Home button styling */
+.home-button {
+  position: absolute;
+  right: 5%;
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 15px 30px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 100px; /* Round borders */
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+  width: 100px;
+  height: 100px;
+}
+
+.home-button:hover {
+  background-color: #3d8c40; /* Darker green */
+  transform: scale(1.05);
+}
+
+/* Navigation buttons container */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Onella div styling */
+.onella {
+  background-color: rgb(
+    255,
+    208,
+    208,
+    0.9
+  ); /* Transparent whitish background */
+  border-radius: 25px; /* Round borders */
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Interaction area styling */
+.interaction-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Example area styling */
+.example-area {
+  margin-left: 20px;
+}
+
+.example-area img {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px; /* Round borders */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Feedback message styling */
+.feedback-message {
+  font-size: 2em;
+  color: green;
+  margin-top: 20px;
+}
+
+/* Scenario text styling */
+.scenario {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #333;
+  /* background-color: #e7d0be; */
+  padding: 20px;
+  border-radius: 25px; /* Round borders */
 }

@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Spicy+Rice&display=swap");
+@import "animate.css";
+.bb {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/people-hanging-out-with-robot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.small-img {
+  width: 400px;
+  height: auto;
+}
+
+.intro {
+  background-image: linear-gradient(60deg, #c6d7df, #fcf2fc);
+}
+
+.gif-img {
+  width: 150px;
+  height: auto;
+  float: left;
+}
+
+.top-right-gif {
+  width: 100px;
+  height: auto;
+  float: right;
+}
+
+.lead {
+  text-align: justify;
+  background-image: linear-gradient(60deg, #c6d7df, #fcf2fc);
+}
+
+.emotion {
+  margin-left: 100px;
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.cute {
+  position: absolute;
+  width: 90px;
+  height: auto;
+}
+.thumbnail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0;
+}
+.box1 {
+  padding-top: 3rem !important;
+  padding-bottom: 100px !important;
+  /* padding-top: 50px !important; */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+
+.card-img-top {
+  width: 100px;
+  height: 110px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* background: linear-gradient(to bottom, #5a639c, #7776b3); */
+  height: 120%;
+  width: auto;
+  margin: 0;
+}
+.sad {
+  background: linear-gradient(to bottom, #5a639c, #7776b3);
+}
+
+.happy {
+  background: linear-gradient(to bottom, #f6aa3f, #ff7d29);
+}
+.angry {
+  background: linear-gradient(to bottom, #e64848, #c21010);
+}
+
+.btn2 {
+  background: #ffbf78;
+  box-shadow: 0 0 10px #9b86bd, 0 0 20px #ff7d29, 0 0 30px #ff7d29;
+}
+
+.btn-group {
+  margin-top: auto;
+  background-color: #eedd44;
+}
+
+.card-text {
+  font-family: sans-serif;
+}
+
+.monster {
+  width: 350px;
+  height: auto;
+  float: left;
+  margin-top: 60px;
+}
+
+.monster1 {
+  width: 170px;
+  height: auto;
+  float: right;
+  margin-top: 56px;
+}
+.head {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #f9fdff;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.btn1 {
+  margin-top: 10px;
+  /* background: #9b86bd; */
+  /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; */
+  /* box-shadow: 0 0 10px #9b86bd, 0 0 20px #5a639c, 0 0 30px #5a639c; */
+  animation: pulse 1s infinite;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.03s linear;
+  color: rgb(1, 1, 1);
+  font-weight: bolder;
+}
+.heading1 {
+  background: linear-gradient(to bottom, #fefefe, #f6cf81);
+  text-align: center;
+  box-shadow: 0 0 10px #ffa62f, 0 0 20px #ffa62f, 0 0 30px #ffa62f;
+  margin: 0;
+}
+
+.heading2 {
+  background: linear-gradient(to bottom, #fefefe, #e2bbe9);
+  text-align: center;
+  box-shadow: 0 0 10px #9b86bd, 0 0 20px #5a639c, 0 0 30px #5a639c;
+  margin: 0;
+}
+
+.heading3 {
+  background: linear-gradient(to bottom, #fefefe, #f48383);
+  text-align: center;
+  box-shadow: 0 0 10px #c21010, 0 0 20px #c21010, 0 0 30px #c21010;
+  margin: 0;
+}
+.btn4 {
+  background-color: #a24d4d;
+
+  box-shadow: 0 0 10px #c54c4c, 0 0 20px #e14646, 0 0 30px #f34343;
+}
+
+.btn4:hover {
+  background: #f48383;
+  box-shadow: 0 0 10px #c54c4c, 0 0 20px #e06363, 0 0 30px #eb8686;
+}
+
+.btn4:active {
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+.btn3 {
+  background: #9b86bd;
+  box-shadow: 0 0 10px #9b86bd, 0 0 20px #5a639c, 0 0 30px #5a639c;
+}
+.btn3:hover {
+  background-color: #e2bbe9;
+  box-shadow: 0 0 10px #9b86bd, 0 0 20px #5a639c, 0 0 30px #5a639c;
+}
+
+.btn3:active {
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+.btn2:hover {
+  background-color: #fbd49d;
+  box-shadow: 0 0 10px #ffa62f, 0 0 20px #ffa62f, 0 0 30px #ffa62f;
+}
+
+.btn2:active {
+  box-shadow: 0 0 2px #ffe8c8;
+  transform: translateY(2px);
+}
+.h2 {
+  font-weight: bolder;
+  font-family: "Spicy Rice";
+  background: linear-gradient(
+    60deg,
+    #5a639c,
+    #ff6f61,
+    #7776b3,
+    #f7bb44,
+    #9b86bd,
+    #fad02e
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+/* 
+
+
+background: linear-gradient(to bottom, #f6619a, #fe812e);
+  background: radial-gradient(circle, #62c1f4, #ff6ec7); */
+/* .video-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px; 
+}
+
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+} */

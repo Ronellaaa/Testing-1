@@ -1,0 +1,75 @@
+[
+  {
+    "emotion": "happiness",
+    "dialogues": [
+      "Hey kiddos! 🎉",
+      "Hope you’re all having an awesome day! 😄🌟",
+      "I’ve been thinking a lot lately... 🤔💭",
+      "Sometimes, it’s tricky for me to show what I’m feeling inside. 😟💔",
+      "But you know what? 🌟",
+      "I bet you amazing kids can help me figure it out! 🤝🙌",
+      "Let’s have some fun and learn how to express our feelings together! 🚀✨"
+    ],
+    "dialogueTimings": [
+      { "start": 0, "end": 1 },
+      { "start": 1, "end": 3 },
+      { "start": 3, "end": 4 },
+      { "start": 4, "end": 9 },
+      { "start": 9, "end": 10 },
+      { "start": 10, "end": 13 },
+      { "start": 13, "end": 17 }
+    ],
+    "image": "hii.png",
+    "voice": "Untitled video - Made with Clipchamp.mp3",
+    "video": "police_animation.mp4"
+  },
+
+  {
+    "emotion": "sadness",
+    "dialogues": [
+      "Hello friends... 😔",
+      "Sometimes, I feel a bit down... 😞",
+      "It's okay to feel sad... 😢",
+      "Remember, it's important to share your feelings. 🤗",
+      "I'm here to listen... 👂",
+      "Let's talk about how we can feel better together. 🌈",
+      "You're never alone in your sadness. 💙"
+    ],
+    "dialogueTimings": [
+      { "start": 0, "end": 1 },
+      { "start": 1, "end": 4 },
+      { "start": 4, "end": 6 },
+      { "start": 6, "end": 9 },
+      { "start": 9, "end": 11 },
+      { "start": 11, "end": 14 },
+      { "start": 14, "end": 17 }
+    ],
+    "image": "sad.png",
+    "voice": "sad.mp3",
+    "video": "sad_animation.mp4"
+  },
+  {
+    "emotion": "anger",
+    "dialogues": [
+      "Hey there! 😡",
+      "Sometimes, I get really angry! 😠",
+      "It's okay to feel mad... 😤",
+      "But it's important to control our anger. 🧘‍♂️",
+      "Let's take deep breaths together... 🌬️",
+      "And talk about what's making us upset. 💬",
+      "We can find a way to calm down. 🌊"
+    ],
+    "dialogueTimings": [
+      { "start": 0, "end": 1 },
+      { "start": 1, "end": 4 },
+      { "start": 4, "end": 7 },
+      { "start": 7, "end": 10 },
+      { "start": 10, "end": 13 },
+      { "start": 13, "end": 16 },
+      { "start": 16, "end": 19 }
+    ],
+    "image": "angryy.png",
+    "voice": "angryy.mp3",
+    "video": "angryy_animation.mp4"
+  }
+]

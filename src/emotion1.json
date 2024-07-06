@@ -1,0 +1,20 @@
+[
+  {
+    "emotion": "happiness",
+    "youtubeVideo": "https://www.youtube.com/embed/axu6BhJfS8A?si=GhN4OOIAwyB5uzNR",
+    "backgroundImage": "dont.jpeg",
+    "video": "cutecat (online-video-cutter.com) (1).mp4"
+  },
+  {
+    "emotion": "sadness",
+    "youtubeVideo": "https://www.youtube.com/embed/GQFWg0hafIA?si=nk3UyZkW5F8Ml9rB",
+    "backgroundImage": "sadImage.jpg",
+    "video": "reminder1 (online-video-cutter.com).mp4"
+  },
+  {
+    "emotion": "anger",
+    "youtubeVideo": "https://www.youtube.com/embed/xwcmp1eXYK4?si=gktICqYvcpmKqfiR",
+    "backgroundImage": "anger.jpeg",
+    "video": "reminder3 (online-video-cutter.com).mp4"
+  }
+]

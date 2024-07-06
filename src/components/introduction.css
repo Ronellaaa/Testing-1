@@ -1,0 +1,229 @@
+@import "animate.css";
+
+.introduction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+
+  padding: 20px;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/dont.jpeg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.headingIntro {
+  color: #11146f;
+  font-weight: bolder;
+  font-family: sans-serif;
+  text-shadow: 0 0 10px #010101, 0 0 20px #5c2020, 0 0 42px rgb(35, 32, 136),
+    0 0 82px rgb(164, 15, 15), 0 0 92px rgb(245, 16, 31);
+  color: rgb(250, 216, 216);
+  background-color: #f25398;
+  text-align: center;
+  background: rgba(237, 54, 179, 0.3);
+}
+
+.video-container {
+  background-color: #e8a985;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.next-button2 {
+  display: inline-block;
+  background-color: #fa1c63;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.next-button2:hover {
+  background-color: #ff97b8;
+}
+
+.arrow {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.arrow1,
+.video {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.next-button1 {
+  display: inline-block;
+  background-color: #fa1c63;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.next-button1:hover {
+  background-color: #e393ac;
+} /* 
+
+.next-button3 {
+  display: inline-block;
+  background-color: #fa1c63;
+  color: white;
+  padding: 40px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  align-items: center;
+  z-index: 2;
+  border-radius: 50%;
+  border: 1px solid red;
+  display: inline-block;
+  margin: 0 0.5rem;
+  transition: all 0.03s linear;
+  
+}
+
+.next-button3:active {
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+} */
+
+.next-button1:hover {
+  background-color: #e393ac;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.popuptext {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.close-button {
+  background-color: #1b2f63;
+  color: white;
+  padding: 10px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.close-button:hover {
+  background-color: #446196;
+}
+
+/* CSS */
+.next-button3 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #b1eaf9 0,
+    #868dd6 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  /* padding-left: 40px;
+  padding-right: 40px; */
+  padding: 40px 40px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 20px;
+}
+
+.next-button3:focus {
+  box-shadow: #0d1556 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.next-button3:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.next-button3:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.home-button2 {
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin-top: 20px;
+}
